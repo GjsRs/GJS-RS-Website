@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GJS Risk Solutions | Independent Insurance Agent in Texas</title>
+    <meta name="description"
+        content="GJS Risk Solutions offers Personal Auto, Home, and Business insurance across Texas. As an independent agent, we shop top carriers to find you the best coverage.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="GJS Risk Solutions Logo" class="logo-img"
+                    onerror="this.src='https://placehold.co/400x100/transparent/002868?text=GJS+Risk+Solutions'">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#bio">Meet Advisor</a></li>
+                    <li><a href="#services">Coverage</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+                <a href="#quote" class="btn btn-primary cta-btn">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Upgraded Independent Brokerage Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-accent"></div>
+        <div class="container hero-container">
+            <!-- Left Column: Value Prop & Quick Quoting Bar -->
+            <div class="hero-content">
+                <div class="hero-badges-row">
+                    <span class="texas-badge"><i class="fa-solid fa-star"></i> Independent Agency</span>
+                    <span class="rating-badge"><i class="fa-solid fa-circle-check"></i> 5/5 Google Reviews</span>
+                </div>
+                <h1>Smarter Coverage. <br><span class="gradient-text">Custom-Built for Texas.</span></h1>
+                <p class="hero-subtext">As an independent agency, we do the shopping for you. We compare rates across over 50 of Texas's top carriers to secure you elite personal and commercial protection at the best rates.</p>
+                
+                <!-- Zero-Friction Quick Quoting Bar -->
+                <div class="quick-quote-bar">
+                    <div class="quote-bar-field">
+                        <label for="hero-insurance-type"><i class="fa-solid fa-shield-halved"></i> I want to protect</label>
+                        <select id="hero-insurance-type" class="quote-bar-select">
+                            <option value="auto">Personal Auto</option>
+                            <option value="home">Homeowners</option>
+                            <option value="business">Business Insurance</option>
+                            <option value="bundle">Bundle & Save</option>
+                        </select>
+                    </div>
+                    <div class="quote-bar-field border-left">
+                        <label for="hero-zipcode"><i class="fa-solid fa-location-dot"></i> ZIP Code</label>
+                        <input type="text" id="hero-zipcode" placeholder="Enter ZIP" maxlength="5" autocomplete="postal-code">
+                    </div>
+                    <button id="hero-submit-quote" class="btn btn-primary quote-bar-btn">
+                        <span>Compare Rates</span> <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Asymmetrical Texas Lifestyle Visual Canvas -->
+            <div class="hero-visual-wrapper">
+                <div class="hero-showcase-frame">
+                    <!-- Base Texas Lifestyle Imagery Layer (renders Home & Auto) -->
+                    <div class="showcase-image-bg"></div>
+                    
+                    <!-- Glassmorphic Advantage Floating Overlay Card -->
+                    <div class="showcase-glass-card">
+                        <h3>GJS Risk Solutions Advantage</h3>
+                        <p class="advantage-tagline">Elite Coverage, Zero Complexity</p>
+                        
+                        <ul class="advantage-features">
+                            <li><i class="fa-solid fa-circle-check"></i> <span><strong>50+</strong> National & Regional Carriers</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>Unbiased, Client-First Guidance</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>Local Texas Experts</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrier Trust Section -->
+    <section class="carrier-trust">
+        <div class="container">
+            <p class="trust-title">Partnering with A-Rated National & Texas Regional Carriers</p>
+            <div class="logo-marquee">
+                <div class="marquee-track">
+                    <!-- First Group of 33 Logos -->
+                    <div class="marquee-group">
+                        <!-- TWIA -->
+                        <div class="carrier-item" aria-label="TWIA">
+                            <img src="ins logos/twia.gif" alt="TWIA Logo">
+                        </div>
+                        <!-- Wright Flood -->
+                        <div class="carrier-item" aria-label="Wright Flood">
+                            <img src="ins logos/wright.jpg" alt="Wright Flood Logo">
+                        </div>
+                        <!-- Progressive -->
+                        <div class="carrier-item" aria-label="Progressive">
+                            <img src="ins logos/progressive.gif" alt="Progressive Logo">
+                        </div>
+                        <!-- Travelers -->
+                        <div class="carrier-item" aria-label="Travelers">
+                            <img src="ins logos/travelers07.jpg" alt="Travelers Logo">
+                        </div>
+                        <!-- Safeco -->
+                        <div class="carrier-item" aria-label="Safeco">
+                            <img src="ins logos/safeco.jpg" alt="Safeco Logo">
+                        </div>
+                        <!-- Allstate -->
+                        <div class="carrier-item" aria-label="Allstate">
+                            <img src="ins logos/Allstate.jpg" alt="Allstate Logo">
+                        </div>
+                        <!-- Chubb -->
+                        <div class="carrier-item" aria-label="Chubb">
+                            <img src="ins logos/chubb.jpg" alt="Chubb Logo">
+                        </div>
+                        <!-- Foremost -->
+                        <div class="carrier-item" aria-label="Foremost">
+                            <img src="ins logos/Foremost.gif" alt="Foremost Logo">
+                        </div>
+                        <!-- The Hartford -->
+                        <div class="carrier-item" aria-label="The Hartford">
+                            <img src="ins logos/hartford.gif" alt="The Hartford Logo">
+                        </div>
+                        <!-- Cypress Texas -->
+                        <div class="carrier-item" aria-label="Cypress Texas">
+                            <img src="ins logos/cypress.jpg" alt="Cypress Texas Logo">
+                        </div>
+                        <!-- HOAIC -->
+                        <div class="carrier-item" aria-label="HOAIC">
+                            <img src="ins logos/hoaic.gif" alt="HOAIC Logo">
+                        </div>
+                        <!-- ASI -->
+                        <div class="carrier-item" aria-label="ASI">
+                            <img src="ins logos/asi.gif" alt="ASI Logo">
+                        </div>
+                        <!-- Mercury -->
+                        <div class="carrier-item" aria-label="Mercury">
+                            <img src="ins logos/mercury.png" alt="Mercury Logo">
+                        </div>
+                        <!-- Allied Trust -->
+                        <div class="carrier-item" aria-label="Allied Trust">
+                            <img src="ins logos/AlliedTrust.jpg" alt="Allied Trust Logo">
+                        </div>
+                        <!-- Bankers Insurance -->
+                        <div class="carrier-item" aria-label="Bankers Insurance">
+                            <img src="ins logos/BankersIns.png" alt="Bankers Insurance Logo">
+                        </div>
+                        <!-- Centauri -->
+                        <div class="carrier-item" aria-label="Centauri">
+                            <img src="ins logos/Centauri.png" alt="Centauri Logo">
+                        </div>
+                        <!-- Jewelers Mutual -->
+                        <div class="carrier-item" aria-label="Jewelers Mutual">
+                            <img src="ins logos/JewelersMutual.png" alt="Jewelers Mutual Logo">
+                        </div>
+                        <!-- Liberty Mutual -->
+                        <div class="carrier-item" aria-label="Liberty Mutual">
+                            <img src="ins logos/LibertyMutual.png" alt="Liberty Mutual Logo">
+                        </div>
+                        <!-- National General -->
+                        <div class="carrier-item" aria-label="National General">
+                            <img src="ins logos/NatGen_all_vert_rgb_pos.png" alt="National General Logo">
+                        </div>
+                        <!-- Nationwide -->
+                        <div class="carrier-item" aria-label="Nationwide">
+                            <img src="ins logos/Nationwide.png" alt="Nationwide Logo">
+                        </div>
+                        <!-- Orchid -->
+                        <div class="carrier-item" aria-label="Orchid">
+                            <img src="ins logos/Orchid.jpg" alt="Orchid Logo">
+                        </div>
+                        <!-- Orion180 -->
+                        <div class="carrier-item" aria-label="Orion180">
+                            <img src="ins logos/Orion180.png" alt="Orion180 Logo">
+                        </div>
+                        <!-- RLI -->
+                        <div class="carrier-item" aria-label="RLI">
+                            <img src="ins logos/RLI.png" alt="RLI Logo">
+                        </div>
+                        <!-- SageSure -->
+                        <div class="carrier-item" aria-label="SageSure">
+                            <img src="ins logos/Sagesure.png" alt="SageSure Logo">
+                        </div>
+                        <!-- Swyfft -->
+                        <div class="carrier-item" aria-label="Swyfft">
+                            <img src="ins logos/Swyfft.png" alt="Swyfft Logo">
+                        </div>
+                        <!-- TAPCO -->
+                        <div class="carrier-item" aria-label="TAPCO">
+                            <img src="ins logos/Tapco.jpg" alt="TAPCO Logo">
+                        </div>
+                        <!-- Burns & Wilcox -->
+                        <div class="carrier-item" aria-label="Burns & Wilcox">
+                            <img src="ins logos/burnslogo.jpg" alt="Burns & Wilcox Logo">
+                        </div>
+                        <!-- CLL Insurance -->
+                        <div class="carrier-item" aria-label="CLL Insurance">
+                            <img src="ins logos/cll.jpg" alt="CLL Insurance Logo">
+                        </div>
+                        <!-- Texas FAIR Plan -->
+                        <div class="carrier-item" aria-label="Texas FAIR Plan">
+                            <img src="ins logos/fairplan.jpg" alt="Texas FAIR Plan Logo">
+                        </div>
+                        <!-- GEICO -->
+                        <div class="carrier-item" aria-label="GEICO">
+                            <img src="ins logos/geico.png" alt="GEICO Logo">
+                        </div>
+                        <!-- Mission Select -->
+                        <div class="carrier-item" aria-label="Mission Select">
+                            <img src="ins logos/missionselect.jpg" alt="Mission Select Logo">
+                        </div>
+                        <!-- Stillwater -->
+                        <div class="carrier-item" aria-label="Stillwater">
+                            <img src="ins logos/stillwater.jpg" alt="Stillwater Logo">
+                        </div>
+                        <!-- Universal Property -->
+                        <div class="carrier-item" aria-label="Universal Property">
+                            <img src="ins logos/universal.gif" alt="Universal Property Logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate Group of 33 Logos (for infinite seamless marquee) -->
+                    <div class="marquee-group" aria-hidden="true">
+                        <!-- TWIA -->
+                        <div class="carrier-item" aria-label="TWIA">
+                            <img src="ins logos/twia.gif" alt="TWIA Logo">
+                        </div>
+                        <!-- Wright Flood -->
+                        <div class="carrier-item" aria-label="Wright Flood">
+                            <img src="ins logos/wright.jpg" alt="Wright Flood Logo">
+                        </div>
+                        <!-- Progressive -->
+                        <div class="carrier-item" aria-label="Progressive">
+                            <img src="ins logos/progressive.gif" alt="Progressive Logo">
+                        </div>
+                        <!-- Travelers -->
+                        <div class="carrier-item" aria-label="Travelers">
+                            <img src="ins logos/travelers07.jpg" alt="Travelers Logo">
+                        </div>
+                        <!-- Safeco -->
+                        <div class="carrier-item" aria-label="Safeco">
+                            <img src="ins logos/safeco.jpg" alt="Safeco Logo">
+                        </div>
+                        <!-- Allstate -->
+                        <div class="carrier-item" aria-label="Allstate">
+                            <img src="ins logos/Allstate.jpg" alt="Allstate Logo">
+                        </div>
+                        <!-- Chubb -->
+                        <div class="carrier-item" aria-label="Chubb">
+                            <img src="ins logos/chubb.jpg" alt="Chubb Logo">
+                        </div>
+                        <!-- Foremost -->
+                        <div class="carrier-item" aria-label="Foremost">
+                            <img src="ins logos/Foremost.gif" alt="Foremost Logo">
+                        </div>
+                        <!-- The Hartford -->
+                        <div class="carrier-item" aria-label="The Hartford">
+                            <img src="ins logos/hartford.gif" alt="The Hartford Logo">
+                        </div>
+                        <!-- Cypress Texas -->
+                        <div class="carrier-item" aria-label="Cypress Texas">
+                            <img src="ins logos/cypress.jpg" alt="Cypress Texas Logo">
+                        </div>
+                        <!-- HOAIC -->
+                        <div class="carrier-item" aria-label="HOAIC">
+                            <img src="ins logos/hoaic.gif" alt="HOAIC Logo">
+                        </div>
+                        <!-- ASI -->
+                        <div class="carrier-item" aria-label="ASI">
+                            <img src="ins logos/asi.gif" alt="ASI Logo">
+                        </div>
+                        <!-- Mercury -->
+                        <div class="carrier-item" aria-label="Mercury">
+                            <img src="ins logos/mercury.png" alt="Mercury Logo">
+                        </div>
+                        <!-- Allied Trust -->
+                        <div class="carrier-item" aria-label="Allied Trust">
+                            <img src="ins logos/AlliedTrust.jpg" alt="Allied Trust Logo">
+                        </div>
+                        <!-- Bankers Insurance -->
+                        <div class="carrier-item" aria-label="Bankers Insurance">
+                            <img src="ins logos/BankersIns.png" alt="Bankers Insurance Logo">
+                        </div>
+                        <!-- Centauri -->
+                        <div class="carrier-item" aria-label="Centauri">
+                            <img src="ins logos/Centauri.png" alt="Centauri Logo">
+                        </div>
+                        <!-- Jewelers Mutual -->
+                        <div class="carrier-item" aria-label="Jewelers Mutual">
+                            <img src="ins logos/JewelersMutual.png" alt="Jewelers Mutual Logo">
+                        </div>
+                        <!-- Liberty Mutual -->
+                        <div class="carrier-item" aria-label="Liberty Mutual">
+                            <img src="ins logos/LibertyMutual.png" alt="Liberty Mutual Logo">
+                        </div>
+                        <!-- National General -->
+                        <div class="carrier-item" aria-label="National General">
+                            <img src="ins logos/NatGen_all_vert_rgb_pos.png" alt="National General Logo">
+                        </div>
+                        <!-- Nationwide -->
+                        <div class="carrier-item" aria-label="Nationwide">
+                            <img src="ins logos/Nationwide.png" alt="Nationwide Logo">
+                        </div>
+                        <!-- Orchid -->
+                        <div class="carrier-item" aria-label="Orchid">
+                            <img src="ins logos/Orchid.jpg" alt="Orchid Logo">
+                        </div>
+                        <!-- Orion180 -->
+                        <div class="carrier-item" aria-label="Orion180">
+                            <img src="ins logos/Orion180.png" alt="Orion180 Logo">
+                        </div>
+                        <!-- RLI -->
+                        <div class="carrier-item" aria-label="RLI">
+                            <img src="ins logos/RLI.png" alt="RLI Logo">
+                        </div>
+                        <!-- SageSure -->
+                        <div class="carrier-item" aria-label="SageSure">
+                            <img src="ins logos/Sagesure.png" alt="SageSure Logo">
+                        </div>
+                        <!-- Swyfft -->
+                        <div class="carrier-item" aria-label="Swyfft">
+                            <img src="ins logos/Swyfft.png" alt="Swyfft Logo">
+                        </div>
+                        <!-- TAPCO -->
+                        <div class="carrier-item" aria-label="TAPCO">
+                            <img src="ins logos/Tapco.jpg" alt="TAPCO Logo">
+                        </div>
+                        <!-- Burns & Wilcox -->
+                        <div class="carrier-item" aria-label="Burns & Wilcox">
+                            <img src="ins logos/burnslogo.jpg" alt="Burns & Wilcox Logo">
+                        </div>
+                        <!-- CLL Insurance -->
+                        <div class="carrier-item" aria-label="CLL Insurance">
+                            <img src="ins logos/cll.jpg" alt="CLL Insurance Logo">
+                        </div>
+                        <!-- Texas FAIR Plan -->
+                        <div class="carrier-item" aria-label="Texas FAIR Plan">
+                            <img src="ins logos/fairplan.jpg" alt="Texas FAIR Plan Logo">
+                        </div>
+                        <!-- GEICO -->
+                        <div class="carrier-item" aria-label="GEICO">
+                            <img src="ins logos/geico.png" alt="GEICO Logo">
+                        </div>
+                        <!-- Mission Select -->
+                        <div class="carrier-item" aria-label="Mission Select">
+                            <img src="ins logos/missionselect.jpg" alt="Mission Select Logo">
+                        </div>
+                        <!-- Stillwater -->
+                        <div class="carrier-item" aria-label="Stillwater">
+                            <img src="ins logos/stillwater.jpg" alt="Stillwater Logo">
+                        </div>
+                        <!-- Universal Property -->
+                        <div class="carrier-item" aria-label="Universal Property">
+                            <img src="ins logos/universal.gif" alt="Universal Property Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding" id="why-us">
+        <div class="container why-us-container">
+            <div class="why-us-image">
+                <div class="image-grid">
+                    <div class="img-box img-box-1"></div>
+                    <div class="img-box img-box-2"></div>
+                </div>
+            </div>
+            <div class="why-us-content">
+                <h2>The Independent Agent Advantage</h2>
+                <p>Unlike captive agents who only sell for one company, <strong>GJS Risk Solutions</strong> works for
+                    <em>you</em>. We partner with multiple top-tier insurance carriers to find the perfect blend of
+                    coverage, value, and price.
+                </p>
+
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+                        <div>
+                            <h4>We Shop Around</h4>
+                            <p>We compare rates across multiple providers to ensure you get the most competitive price.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div>
+                            <h4>Unbiased Advice</h4>
+                            <p>Our loyalty is to our clients, not the insurance companies. We recommend what's truly
+                                best for you.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Local Texas Expertise</h4>
+                            <p>We understand the specific risks Texans face and tailor policies to mitigate them
+                                effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Your Advisor / Bio Section -->
+    <section class="bio section-padding" id="bio">
+        <div class="container bio-container">
+            <!-- Profile Info: Biography & Quote -->
+            <div class="bio-profile-row">
+                <div class="bio-image-wrapper">
+                    <div class="bio-image">
+                        <img src="GJS-Headshot-2.png" alt="Greg Smith - Founder, GJS Risk Solutions" class="bio-img">
+                    </div>
+                </div>
+                
+                <div class="bio-content">
+                    <span class="bio-badge"><i class="fa-solid fa-user-tie"></i> Founder & Advisor</span>
+                    <h2>Gregory J. Smith</h2>
+                    
+                    <p class="bio-text"><strong>Gregory J. Smith</strong> is the founder of GJS Risk Solutions and brings more than six years of experience in personal and commercial insurance, backed by over 20 years in technology sales and business consulting. As an independent insurance advisor, Greg works with multiple top-rated carriers to help individuals, families, and businesses across Texas find the right balance between protection and cost.</p>
+                    
+                    <p class="bio-text">Known for his personalized approach, Greg takes the time to explain coverage in plain English, identify potential gaps, and help clients make informed decisions—not just find the lowest price. When he’s not helping clients protect what matters most, Greg enjoys spending time with his wife Lisa, daughters Holly and Heidi, serving in the community, and living out his faith through service to others.</p>
+                    
+                    <blockquote class="bio-quote">
+                        <p>“My goal is simple: help people understand their insurance, protect what matters most, and be there when they need me.”</p>
+                        <cite>– Greg Smith, GJS Risk Solutions</cite>
+                    </blockquote>
+                </div>
+            </div>
+            
+            <!-- Advisor Mindset Grid -->
+            <div class="bio-mindset-wrapper">
+                <div class="mindset-header text-center">
+                    <h3>The Advisor Mindset</h3>
+                    <p class="mindset-lead">How we protect your assets and advocate for your interests</p>
+                </div>
+                
+                <div class="bio-mindset-grid">
+                    <div class="mindset-card">
+                        <div class="mindset-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Strong Coverage Knowledge</h4>
+                        <p>We translate complex policy structures—deductibles, endorsements, and exclusions—into real-world risk scenarios, eliminating the guesswork.</p>
+                    </div>
+                    <div class="mindset-card">
+                        <div class="mindset-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h4>Direct & Honest Communication</h4>
+                        <p>We don't sugarcoat. If your coverage is too low or a decision is risky, we tell you plainly. Building trust is our priority.</p>
+                    </div>
+                    <div class="mindset-card">
+                        <div class="mindset-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                        <h4>Fierce Client Advocacy</h4>
+                        <p>We anticipate "what happens if something goes wrong?" Whether it's Texas drivers or tornado damage, we protect you before the claim happens.</p>
+                    </div>
+                    <div class="mindset-card">
+                        <div class="mindset-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h4>Detail-Oriented Approach</h4>
+                        <p>We catch the gaps others miss—like no rental coverage or low dwelling limits—because attention to detail directly impacts your claim outcome.</p>
+                    </div>
+                    <div class="mindset-card">
+                        <div class="mindset-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h4>Efficiency & Practicality</h4>
+                        <p>Insurance shouldn't be complicated. We explain your policies in simple, real-life terms so you know exactly what you're buying.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Comprehensive Coverage Options</h2>
+                <p>We provide specialized insurance solutions tailored to your unique needs across Texas.</p>
+            </div>
+            <div class="service-rows">
+                <!-- Home Insurance -->
+                <div class="service-row">
+                    <img src="HomePic.png" alt="Home Insurance" class="service-image">
+                    <div class="service-row-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <h3>Homeowners</h3>
+                        <p>Your home is your biggest investment. We protect it from Texas storms, fire, theft, and liabilities with comprehensive property coverage.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Property Damage</li>
+                            <li><i class="fa-solid fa-check"></i> Personal Liability</li>
+                            <li><i class="fa-solid fa-check"></i> Umbrella</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Auto Insurance -->
+                <div class="service-row reverse-row">
+                    <img src="AutoPic.png" alt="Personal Auto Insurance" class="service-image">
+                    <div class="service-row-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3>Personal Auto</h3>
+                        <p>Whether you're commuting in Houston or road-tripping the Hill Country, we ensure you have the right coverage to protect you and your vehicle on Texas roads.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Liability & Collision</li>
+                            <li><i class="fa-solid fa-check"></i> Uninsured Motorist</li>
+                            <li><i class="fa-solid fa-check"></i> Roadside Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Business Insurance -->
+                <div class="service-row">
+                    <img src="BizPic.png" alt="Business Insurance" class="service-image">
+                    <div class="service-row-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3>Business Insurance</h3>
+                        <p>From small startups to established enterprises, we safeguard your business assets, employees, and operations against unforeseen risks.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> General Liability</li>
+                            <li><i class="fa-solid fa-check"></i> Commercial Auto</li>
+                            <li><i class="fa-solid fa-check"></i> Workers' Compensation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Life Insurance -->
+                <div class="service-row reverse-row">
+                    <img src="life.png" alt="Life Insurance" class="service-image">
+                    <div class="service-row-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3>Life Insurance</h3>
+                        <p>Protect the ones who matter most. We help you choose the right life insurance coverage to secure your family's financial future and offer peace of mind.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Term Life Insurance</li>
+                            <li><i class="fa-solid fa-check"></i> Whole Life & Universal</li>
+                            <li><i class="fa-solid fa-check"></i> Annuities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Don't just take our word for it. See why Texans trust GJS Risk Solutions with their insurance needs.
+                </p>
+            </div>
+
+            <div class="reviews-scroller">
+                <div class="reviews-track">
+                    <!-- Review 1 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"What a great experience. Gregory Smith was a pleasure to work with. He
+                            helped me find new car insurance and home owner’s insurance. He was able to get me better
+                            coverage while saving me money. He was always available to answer any questions. I highly
+                            recommend this company and Gregory Smith if you’re looking for new insurance."</p>
+                        <p class="review-author">- S. MacLennan</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excellent service. Greg guided us through our options and to the best
+                            carrier based on our needs. Highly recommend!"</p>
+                        <p class="review-author">- D. Acuna</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"I highly recommend working with Gregory. Not only he was able to save me
+                            money on my premiums, he also found an insurance company that gave me better coverage. Greg
+                            really took his time to explain to me the process and the differences between the options he
+                            provided me. I couldn't not be more satisfied."</p>
+                        <p class="review-author">- S. Jaaldi</p>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg Smith has help me save tremendously, as well as guiding me through
+                            the ins and outs of my policies, to get the best bang for our insurance dollars. I am highly
+                            recommending him!"</p>
+                        <p class="review-author">- K. Patterson</p>
+                    </div>
+                    <!-- Review 5 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Great service and low rates. Thank you for helping us with our Business
+                            and Home Insurance needs."</p>
+                        <p class="review-author">- J. Pond</p>
+                    </div>
+                    <!-- Review 6 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg is the best! So easy to work with and extremely knowledgable! He
+                            will put you in the perfect policy for you and your family."</p>
+                        <p class="review-author">- J. Williams</p>
+                    </div>
+                    <!-- Review 7 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg has been wonderful to work with for our home, auto, and business
+                            insurance. His customer service is excellent, and we really appreciate his annual follow-ups
+                            to make sure everything still fits our needs. He does a great job explaining our options,
+                            what’s required, and the differences between policies, which makes the whole process so much
+                            easier. Highly recommend Greg to anyone looking for an honest, knowledgeable insurance
+                            agent!"</p>
+                        <p class="review-author">- N. Mock</p>
+                    </div>
+                    <!-- Review 8 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"I recently worked with Greg to find homeowners insurance, and I couldn’t be more pleased with the experience. From start to finish, he was incredibly patient — never making me feel rushed, even when I had a lot of questions. He took the time to thoroughly explain each policy option, breaking down the details in a way that was easy to understand. Thanks to his guidance, I felt confident that I was choosing the best solution for my needs and budget. If you’re looking for an agent who genuinely has your best interests in mind, I highly recommend Greg!"</p>
+                        <p class="review-author">- E. Shihadeh</p>
+                    </div>
+                    <!-- Duplicate review 1 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"What a great experience. Gregory Smith was a pleasure to work with. He
+                            helped me find new car insurance and home owner’s insurance. He was able to get me better
+                            coverage while saving me money. He was always available to answer any questions. I highly
+                            recommend this company and Gregory Smith if you’re looking for new insurance."</p>
+                        <p class="review-author">- S. MacLennan</p>
+                    </div>
+                    <!-- Duplicate review 2 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excellent service. Greg guided us through our options and to the best
+                            carrier based on our needs. Highly recommend!"</p>
+                        <p class="review-author">- Danny Acuna</p>
+                    </div>
+                    <!-- Duplicate review 3 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"I highly recommend working with Gregory. Not only he was able to save me
+                            money on my premiums, he also found an insurance company that gave me better coverage. Greg
+                            really took his time to explain to me the process and the differences between the options he
+                            provided me. I couldn't not be more satisfied."</p>
+                        <p class="review-author">- S. Jaaldi</p>
+                    </div>
+                    <!-- Duplicate review 4 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg Smith has help me save tremendously, as well as guiding me through
+                            the ins and outs of my policies, to get the best bang for our insurance dollars. I am highly
+                            recommending him!"</p>
+                        <p class="review-author">- K. Patterson</p>
+                    </div>
+                    <!-- Duplicate review 5 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Great service and low rates. Thank you for helping us with our Business
+                            and Home Insurance needs."</p>
+                        <p class="review-author">- J. Pond</p>
+                    </div>
+                    <!-- Duplicate review 6 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg is the best! So easy to work with and extremely knowledgable! He
+                            will put you in the perfect policy for you and your family."</p>
+                        <p class="review-author">- J. Williams</p>
+                    </div>
+                    <!-- Duplicate review 7 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Greg has been wonderful to work with for our home, auto, and business
+                            insurance. His customer service is excellent, and we really appreciate his annual follow-ups
+                            to make sure everything still fits our needs. He does a great job explaining our options,
+                            what’s required, and the differences between policies, which makes the whole process so much
+                            easier. Highly recommend Greg to anyone looking for an honest, knowledgeable insurance
+                            agent!"</p>
+                        <p class="review-author">- N. Mock</p>
+                    </div>
+                    <!-- Duplicate review 8 -->
+                    <div class="review-card glass-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"I recently worked with Greg to find homeowners insurance, and I couldn’t be more pleased with the experience. From start to finish, he was incredibly patient — never making me feel rushed, even when I had a lot of questions. He took the time to thoroughly explain each policy option, breaking down the details in a way that was easy to understand. Thanks to his guidance, I felt confident that I was choosing the best solution for my needs and budget. If you’re looking for an agent who genuinely has your best interests in mind, I highly recommend Greg!"</p>
+                        <p class="review-author">- E. Shihadeh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-cta" style="margin-top: 3rem;">
+                <a href="https://g.page/r/CQ11I9Yh8fXzEAE/review" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary">
+                    <i class="fa-brands fa-google" style="margin-right: 8px;"></i> Leave Us a Review
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Form -->
+    <section class="contact section-padding" id="quote">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Ready to secure your future?</h2>
+                <p>Get a free, no-obligation quote today. Let our experts find the coverage that fits your life and
+                    budget.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:8323874544">832-387-4544</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:quotes@gjsrs.com">quotes@gjsrs.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Serving all of Texas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper glass-card">
+                <h3>Request a Quote</h3>
+                
+                <!-- Wizard Progress Indicator -->
+                <div class="wizard-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="wizard-progress-fill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="progress-step active" data-step="1">1</div>
+                        <div class="progress-step" data-step="2">2</div>
+                        <div class="progress-step" data-step="3">3</div>
+                    </div>
+                </div>
+
+                <form id="quote-form" class="contact-form wizard-form" action="https://formsubmit.co/quotes@gjsrs.com" method="POST">
+                    <!-- Step 1: Coverage Type Selection -->
+                    <div class="wizard-step active" data-step="1">
+                        <p class="step-instruction">What would you like to protect today?</p>
+                        <div class="insurance-type-cards">
+                            <div class="type-card selected" data-value="auto">
+                                <i class="fa-solid fa-car"></i>
+                                <span>Personal Auto</span>
+                            </div>
+                            <div class="type-card" data-value="home">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Homeowners</span>
+                            </div>
+                            <div class="type-card" data-value="business">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Business</span>
+                            </div>
+                            <div class="type-card" data-value="multiple">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Bundle & Save</span>
+                            </div>
+                        </div>
+                        <!-- Hidden input to store dynamic value -->
+                        <input type="hidden" id="insurance-type" name="insurance-type" value="auto">
+                    </div>
+
+                    <!-- Step 2: Zip Code & Optional Details -->
+                    <div class="wizard-step" data-step="2">
+                        <p class="step-instruction">Let's find the best rates for your area.</p>
+                        <div class="form-group">
+                            <label for="zipcode">Texas Zip Code</label>
+                            <input type="text" id="zipcode" name="zipcode" placeholder="77001" pattern="[0-9]{5}" maxlength="5" inputmode="numeric">
+                        </div>
+                        <div class="form-group">
+                            <label for="additional-details">Any specific details or bundle needs? (Optional)</label>
+                            <textarea id="additional-details" name="additional-details" placeholder="e.g. bundling auto + home, secondary residence, recent claim history..." rows="3"></textarea>
+                        </div>
+                        <div class="wizard-buttons">
+                            <button type="button" class="btn btn-secondary prev-step">Back</button>
+                            <button type="button" class="btn btn-primary next-step">Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Contact Details -->
+                    <div class="wizard-step" data-step="3">
+                        <p class="step-instruction">Almost done! Where should we send your free quote?</p>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(832) 555-0199">
+                        </div>
+                        <div class="wizard-buttons">
+                            <button type="button" class="btn btn-secondary prev-step">Back</button>
+                            <button type="submit" class="btn btn-primary btn-submit">Get My Free Quote</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="GJS Risk Solutions Logo" class="footer-logo"
+                    onerror="this.style.display='none'">
+                <p>GJS Risk Solutions is an independent insurance agency proudly serving the entire state of Texas. We
+                    protect what matters most to you.</p>
+            </div>
+             <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#bio">Meet Advisor</a></li>
+                    <li><a href="#services">Coverage</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#quote">Get a Quote</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">Personal Auto</a></li>
+                    <li><a href="#services">Homeowners</a></li>
+                    <li><a href="#services">Business Insurance</a></li>
+                    <li><a href="#services">Life & Annuities</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 2H Enterprises, LLC DBA GJS Risk Solutions. All Rights Reserved.</p>
+                <p class="disclaimer">Coverage is subject to policy terms, conditions, and exclusions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
