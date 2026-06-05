@@ -1611,3 +1611,76 @@ ul {
         height: 300px;
     }
 }
+
+/* ==========================================================================
+   Social Media Styling
+   ========================================================================== */
+/* Biography Social Links */
+.bio-social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.25rem;
+    border-top: 1px solid rgba(0, 32, 91, 0.1);
+    padding-top: 1.5rem;
+}
+
+.bio-social span {
+    font-weight: 700;
+    color: var(--tx-blue);
+    font-size: 0.95rem;
+}
+
+.bio-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.bio-social-link i {
+    font-size: 1.15rem;
+}
+
+.bio-social-link:hover {
+    color: var(--tx-red);
+    transform: translateY(-2px);
+}
+
+/* Footer Social Icons */
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-social span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.footer-social a:hover {
+    background-color: var(--tx-red);
+    color: var(--tx-white);
+    transform: translateY(-3px);
+}
