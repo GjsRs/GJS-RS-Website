@@ -247,14 +247,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.textContent = 'Sending...';
                 submitBtn.disabled = true;
 
-                // Send actual email using FormSubmit.co AJAX endpoint
-                const formData = new FormData(quoteForm);
-                fetch("https://formsubmit.co/ajax/quotes@gjsrs.com", {
+                // Send actual email using FormSubmit.co AJAX endpoint (JSON formatted payload)
+                const clientEmail = document.getElementById('email').value;
+                const jsonPayload = {
+                    _subject: `New Quote Request from ${name}`,
+                    _replyto: clientEmail,
+                    "Client Name": name,
+                    "Email": clientEmail,
+                    "Phone": document.getElementById('phone').value,
+                    "Insurance Type": document.getElementById('insurance-type').value,
+                    "ZIP Code": document.getElementById('zipcode').value,
+                    "Additional Details": document.getElementById('additional-details').value
+                };
+
+                fetch("https://formsubmit.co/ajax/info@gjsrs.com", {
                     method: "POST",
                     headers: {
+                        'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
-                    body: formData
+                    body: JSON.stringify(jsonPayload)
                 })
                 .then(response => response.json())
                 .then(data => {
