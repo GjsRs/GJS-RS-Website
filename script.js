@@ -278,8 +278,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.style.backgroundColor = '#10B981'; // Success emerald green
                     submitBtn.style.color = '#FFFFFF';
 
-                    // Alert the user of receipt
-                    alert(`Thank you, ${name}! We have received your detailed Texas quote request and we will contact you shortly.`);
+                    // Alert the user of receipt based on inquiry type
+                    const typeValue = document.getElementById('insurance-type') ? document.getElementById('insurance-type').value : 'auto';
+                    let typeLabel = '';
+                    if (typeValue === 'auto') {
+                        typeLabel = 'Auto ';
+                    } else if (typeValue === 'home') {
+                        typeLabel = 'Home ';
+                    } else if (typeValue === 'multiple') {
+                        typeLabel = 'Bundle ';
+                    } else if (typeValue === 'business') {
+                        typeLabel = 'Business ';
+                    }
+
+                    alert(`Thank you, ${name}! We have received your detailed Texas ${typeLabel}quote request and we will contact you shortly.`);
 
                     // Reset form fields
                     quoteForm.reset();
