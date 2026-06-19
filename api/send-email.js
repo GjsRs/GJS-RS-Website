@@ -591,7 +591,7 @@ function getHtmlBody(firstName, type) {
 <body>
   <div class="email-container">
     <div class="email-header" style="background-color: #ffffff; padding: 25px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; border-top: 4px solid #002868;">
-      <img src="https://www.gjsrs.com/logo.png" alt="GJS Risk Solutions" style="max-height: 55px; max-width: 250px; display: block; margin: 0 auto;">
+      <img src="https://www.gjsrs.com/logo.png" alt="GJS Risk Solutions" width="150" style="width: 150px; max-width: 100%; height: auto; display: block; margin: 0 auto;">
     </div>
     <div class="email-body">
       <h2>Hi ${firstName},</h2>
