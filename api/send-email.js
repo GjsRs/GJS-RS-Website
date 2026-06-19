@@ -585,14 +585,14 @@ function getHtmlBody(firstName, type) {
 </head>
 <body>
   <div class="email-container">
-    <div class="email-header" style="background: linear-gradient(135deg, #002868 0%, #004098 100%); padding: 30px 20px; text-align: center;">
-      <h1 style="color: #ffffff; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.5px;">GJS Risk Solutions</h1>
+    <div class="email-header" style="background-color: #ffffff; padding: 25px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; border-top: 4px solid #002868;">
+      <img src="https://www.gjsrs.com/logo.png" alt="GJS Risk Solutions" style="max-height: 55px; max-width: 250px; display: block; margin: 0 auto;">
     </div>
     <div class="email-body">
       <h2>Hi ${firstName},</h2>
       ${mainContent}
       
-      ${type === 'auto' || type === 'business' ? `
+      ${type === 'business' ? `
       <div class="btn-container">
         <a href="https://calendly.com/gjsrs/15min" class="btn" target="_blank">Book a 15-Minute Call</a>
       </div>
