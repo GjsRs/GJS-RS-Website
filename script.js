@@ -247,20 +247,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.textContent = 'Sending...';
                 submitBtn.disabled = true;
 
-                // Send actual email using FormSubmit.co AJAX endpoint (JSON formatted payload)
-                const clientEmail = document.getElementById('email').value;
+                const clientEmail = document.getElementById('email').value.trim();
                 const jsonPayload = {
-                    _subject: `New Quote Request from ${name}`,
-                    _replyto: clientEmail,
-                    "Client Name": name,
-                    "Email": clientEmail,
-                    "Phone": document.getElementById('phone').value,
-                    "Insurance Type": document.getElementById('insurance-type').value,
-                    "ZIP Code": document.getElementById('zipcode').value,
-                    "Additional Details": document.getElementById('additional-details').value
+                    name: name.trim(),
+                    email: clientEmail,
+                    phone: document.getElementById('phone').value.trim(),
+                    insuranceType: document.getElementById('insurance-type').value,
+                    zipcode: document.getElementById('zipcode').value.trim(),
+                    additionalDetails: document.getElementById('additional-details').value.trim()
                 };
 
-                fetch("https://formsubmit.co/ajax/info@gjsrs.com", {
+                fetch("/api/send-email", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
@@ -268,16 +265,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     body: JSON.stringify(jsonPayload)
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw new Error(err.message || 'Server error'); });
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     console.log('Form successfully submitted:', data);
-                })
-                .catch(error => {
-                    console.error('Error submitting form:', error);
-                });
-
-                // Simulate Carrier Quoting API Call visual transition
-                setTimeout(() => {
+                    
                     submitBtn.textContent = 'Quote Request Sent!';
                     submitBtn.style.backgroundColor = '#10B981'; // Success emerald green
                     submitBtn.style.color = '#FFFFFF';
@@ -308,8 +304,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         currentStep = 1;
                         updateWizardUI();
                     }, 3000);
-                    
-                }, 1500);
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    alert(`Submission failed: ${error.message || 'Please try again or contact us directly at info@gjsrs.com.'}`);
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
             }
         });
 
