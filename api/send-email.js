@@ -592,11 +592,9 @@ function getHtmlBody(firstName, type) {
       <h2>Hi ${firstName},</h2>
       ${mainContent}
       
-      ${type === 'business' ? `
       <div class="btn-container">
         <a href="https://calendly.com/gjsrs/15min" class="btn" target="_blank">Book a 15-Minute Call</a>
       </div>
-      ` : ''}
 
       <div style="margin-top: 25px;">
         <p style="margin-bottom: 5px;">Regards,</p>
