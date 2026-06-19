@@ -159,7 +159,7 @@ function getHtmlBody(firstName, type) {
   switch (type) {
     case 'auto':
       mainContent = `<p>Thank you for the opportunity to review your insurance.</p>
-      <p>Please reply to this email and complete the form below and return it along with copies of your current Declarations (Dec) pages for your Auto.</p>
+      <p>Please reply to this email and complete the form below and return it along with copies of your current Declarations (Dec) pages for both Auto and Home.</p>
       
       <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
         <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">GENERAL CONTACT INFORMATION</h4>
@@ -227,7 +227,7 @@ function getHtmlBody(firstName, type) {
 
     case 'home':
       mainContent = `<p>Thank you for the opportunity to review your insurance.</p>
-      <p>Please reply to this email and complete the form below and return it along with copies of your current Declarations (Dec) pages for your Home.</p>
+      <p>Please reply to this email and complete the form below and return it along with copies of your current Declarations (Dec) pages for both Auto and Home.</p>
       
       <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
         <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">GENERAL CONTACT INFORMATION</h4>
