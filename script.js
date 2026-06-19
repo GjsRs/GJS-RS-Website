@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (typeValue === 'auto') {
                         typeLabel = 'Auto ';
                     } else if (typeValue === 'home') {
-                        typeLabel = 'Home ';
+                        typeLabel = 'Homeowners ';
                     } else if (typeValue === 'multiple') {
                         typeLabel = 'Bundle ';
                     } else if (typeValue === 'business') {
