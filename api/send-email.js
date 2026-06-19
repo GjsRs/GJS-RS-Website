@@ -390,8 +390,110 @@ function getHtmlBody(firstName, type) {
       break;
 
     case 'business':
-      mainContent = `<p>Thank you for requesting a business insurance quote with GJS Risk Solutions.</p>
-      <p>We are shopping top carriers in Texas to find you the best rates and coverage to safeguard your business assets and operations. Gregory Smith will review your information and follow up with you shortly.</p>`;
+      mainContent = `<p>Thank you for the opportunity to review your business insurance needs.</p>
+      <p>Please reply to this email with the information below. If you have current insurance policies, please also attach copies of your Declarations (Dec) pages and any recent loss runs.</p>
+      
+      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
+        <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">BUSINESS INFORMATION</h4>
+        
+        <p style="margin: 10px 0;"><strong>Legal Business Name:</strong></p>
+        <p style="margin: 10px 0;"><strong>DBA (if applicable):</strong></p>
+        <p style="margin: 10px 0;"><strong>Business Address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Mailing Address (if different):</strong></p>
+        <p style="margin: 10px 0;"><strong>Business Phone:</strong></p>
+        <p style="margin: 10px 0;"><strong>Website:</strong></p>
+        <p style="margin: 10px 0;"><strong>Primary Contact Name:</strong></p>
+        <p style="margin: 10px 0;"><strong>Email Address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Best Phone Number:</strong></p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">BUSINESS DETAILS</h4>
+        
+        <p style="margin: 10px 0;"><strong>Type of Business:</strong></p>
+        <p style="margin: 10px 0;"><strong>Description of Operations:</strong></p>
+        <p style="margin: 10px 0;"><strong>Year Business Started:</strong></p>
+        <p style="margin: 10px 0;"><strong>Years of Experience in Industry:</strong></p>
+        
+        <p style="margin: 10px 0;"><strong>Business Structure:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          ☐ Sole Proprietor<br>
+          ☐ Partnership<br>
+          ☐ LLC<br>
+          ☐ Corporation<br>
+          ☐ Other
+        </p>
+        
+        <p style="margin: 10px 0;"><strong>Annual Gross Revenue:</strong></p>
+        <p style="margin: 10px 0;"><strong>Estimated Payroll:</strong></p>
+        <p style="margin: 10px 0;"><strong>Number of Owners:</strong></p>
+        <p style="margin: 10px 0;"><strong>Number of Employees:</strong></p>
+        
+        <p style="margin: 10px 0;"><strong>Do you use subcontractors?</strong> (☐ Yes ☐ No)</p>
+        <p style="margin: 10px 0;"><strong>If yes, approximately what percentage of work is subcontracted?</strong></p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">INSURANCE INFORMATION</h4>
+        <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">* Please attach current policy declarations pages if available.</p>
+        
+        <p style="margin: 10px 0;"><strong>Current Insurance Company:</strong></p>
+        <p style="margin: 10px 0;"><strong>Policy Renewal Date:</strong></p>
+        <p style="margin: 10px 0;"><strong>How long have you been with your current carrier?</strong></p>
+        
+        <p style="margin: 10px 0;"><strong>Reason for seeking a quote?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          ☐ Premium Increase<br>
+          ☐ Coverage Review<br>
+          ☐ New Business<br>
+          ☐ Carrier Non-Renewal<br>
+          ☐ Other
+        </p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">CLAIMS HISTORY</h4>
+        
+        <p style="margin: 10px 0;"><strong>Have you had any claims or losses in the past 5 years?</strong> (☐ Yes ☐ No)</p>
+        <p style="margin: 10px 0;"><strong>If yes, please provide details, dates, and amounts paid:</strong></p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">PROPERTY INFORMATION (If Applicable)</h4>
+        
+        <p style="margin: 10px 0;"><strong>Do you own or rent your business location?</strong></p>
+        <p style="margin: 10px 0;"><strong>Square Footage:</strong></p>
+        <p style="margin: 10px 0;"><strong>Year Built:</strong></p>
+        <p style="margin: 10px 0;"><strong>Construction Type (if known):</strong></p>
+        <p style="margin: 10px 0;"><strong>Any business personal property, equipment, or inventory?</strong> (☐ Yes ☐ No)</p>
+        <p style="margin: 10px 0;"><strong>Estimated value:</strong></p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">VEHICLES (If Applicable)</h4>
+        
+        <p style="margin: 10px 0;"><strong>Do you own any business vehicles?</strong> (☐ Yes ☐ No)</p>
+        <p style="margin: 10px 0;"><strong>If yes, please provide:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Number of vehicles:<br>
+          Vehicle types:<br>
+          Number of drivers:
+        </p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">ADDITIONAL COVERAGES NEEDED</h4>
+        <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">Please indicate any coverage you would like quoted:</p>
+        <p style="margin: 6px 0 12px 20px;">
+          ☐ General Liability<br>
+          ☐ Commercial Property<br>
+          ☐ Business Owners Policy (BOP)<br>
+          ☐ Commercial Auto<br>
+          ☐ Workers’ Compensation<br>
+          ☐ Professional Liability (E&amp;O)<br>
+          ☐ Cyber Liability<br>
+          ☐ Umbrella Liability<br>
+          ☐ Inland Marine / Equipment<br>
+          ☐ Bonds<br>
+          ☐ Employment Practices Liability (EPLI)<br>
+          ☐ Directors &amp; Officers (D&amp;O)<br>
+          ☐ Other:
+        </p>
+
+        <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">ADDITIONAL INFORMATION</h4>
+        
+        <p style="margin: 10px 0;"><strong>Are there any contracts requiring specific insurance limits or additional insured status?</strong> (☐ Yes ☐ No)</p>
+        <p style="margin: 10px 0;"><strong>Anything else we should know about your business?</strong></p>
+      </div>
+      <p style="margin-top: 20px;">Thank you. Once I receive this information, I’ll review your needs and contact you with any additional questions.</p>`;
       break;
 
     default:
