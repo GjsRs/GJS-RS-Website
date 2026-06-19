@@ -161,92 +161,67 @@ function getHtmlBody(firstName, type) {
       mainContent = `<p>Thank you for the opportunity to review your insurance.</p>
       <p>Please complete the form below and return it along with copies of your current Declarations (Dec) pages for your Auto.</p>
       
-      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0;">
+      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
         <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">GENERAL CONTACT INFORMATION</h4>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #1</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #2</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Home Address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Mailing Address (if different):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How Long at current address?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>If less than 3 years, please provide previous address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Email Address(es) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Named Insured #1 (First &amp; Last Name):</strong></p>
+        <p style="margin: 10px 0;"><strong>Named Insured #2 (First &amp; Last Name):</strong></p>
+        <p style="margin: 10px 0;"><strong>Home Address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Mailing Address (if different):</strong></p>
+        <p style="margin: 10px 0;"><strong>How Long at current address?</strong></p>
+        <p style="margin: 10px 0;"><strong>If less than 3 years, please provide previous address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
+        <p style="margin: 10px 0;"><strong>Email Address(es) for both Insureds:</strong></p>
 
         <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">AUTO INSURANCE INFORMATION</h4>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">* Please attach a copy of your current Auto Declarations page from your current carrier (shows coverages/limits for "apples-to-apples" comparison).</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Current Auto Insurance Company:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How long with current carrier?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Policy Renewal Date (if known):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
+        <p style="margin: 10px 0;"><strong>Current Auto Insurance Company:</strong></p>
+        <p style="margin: 10px 0;"><strong>How long with current carrier?</strong></p>
+        <p style="margin: 10px 0;"><strong>Policy Renewal Date (if known):</strong></p>
 
         <h5 style="color: #002868; margin: 15px 0 10px 0; font-size: 13px;">Drivers</h5>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">List all drivers in the household:</p>
         
-        <div style="border-left: 3px solid #cbd5e1; padding-left: 10px; margin-bottom: 15px;">
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 1:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-          
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 2:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-          
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 3:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-        </div>
+        <p style="margin: 10px 0;"><strong>Driver 1 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Additional drivers (if any):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Driver 2 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>How many household drivers &amp; non-drivers total?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Drivers: [____] &nbsp;&nbsp;&nbsp; Non-drivers: [____]
-        </p>
+        <p style="margin: 10px 0;"><strong>Driver 3 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
+        
+        <p style="margin: 10px 0;"><strong>Additional drivers (if any):</strong></p>
+        <p style="margin: 10px 0;"><strong>How many household drivers &amp; non-drivers total?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Drivers:<br>Non-drivers:</p>
 
         <h5 style="color: #002868; margin: 20px 0 10px 0; font-size: 13px;">Vehicles &amp; Usage</h5>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">List each vehicle and how it is used:</p>
         
-        <div style="border-left: 3px solid #cbd5e1; padding-left: 10px; margin-bottom: 15px;">
-          <p style="margin: 8px 0; font-size: 13px;"><strong>Vehicle 1</strong> – Year/Make/Model:</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[________________________]</div>
-          <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-            &nbsp;&nbsp;Primary Driver: [________________] &nbsp;&nbsp;&nbsp; One-way miles to work/school: [____]<br>
-            &nbsp;&nbsp;Days per week for work/school: [____] &nbsp;&nbsp;&nbsp; Date Purchased: [________]<br>
-            &nbsp;&nbsp;Pleasure / Business use (describe): [________________________]<br>
-            &nbsp;&nbsp;Is there a lien or lease? (Yes/No): [____] &nbsp;&nbsp;&nbsp; Lender/Lease Co Name &amp; Address: [________________________]
-          </p>
+        <p style="margin: 10px 0;"><strong>Vehicle 1 – Year/Make/Model:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Who primarily drives this vehicle?<br>
+          One-way miles to work or school:<br>
+          How many days per week for work/school use?<br>
+          Pleasure / Business use (describe):<br>
+          Date purchased:<br>
+          Is there a lien or lease? (Yes/No)<br>
+          If Yes, Lender/Lease Company Name &amp; Address:
+        </p>
 
-          <p style="margin: 15px 0 8px 0; font-size: 13px;"><strong>Vehicle 2</strong> – Year/Make/Model:</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[________________________]</div>
-          <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-            &nbsp;&nbsp;Primary Driver: [________________] &nbsp;&nbsp;&nbsp; One-way miles to work/school: [____]<br>
-            &nbsp;&nbsp;Days per week for work/school: [____] &nbsp;&nbsp;&nbsp; Date Purchased: [________]<br>
-            &nbsp;&nbsp;Pleasure / Business use (describe): [________________________]<br>
-            &nbsp;&nbsp;Is there a lien or lease? (Yes/No): [____] &nbsp;&nbsp;&nbsp; Lender/Lease Co Name &amp; Address: [________________________]
-          </p>
-        </div>
+        <p style="margin: 15px 0 10px 0;"><strong>Vehicle 2 – Year/Make/Model:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Who primarily drives this vehicle?<br>
+          One-way miles to work or school:<br>
+          How many days per week for work/school use?<br>
+          Pleasure / Business use (describe):<br>
+          Date purchased:<br>
+          Is there a lien or lease? (Yes/No)<br>
+          If Yes, Lender/Lease Company Name &amp; Address:
+        </p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Additional vehicles (if any):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Additional vehicles (if any):</strong></p>
       </div>`;
       break;
 
@@ -254,86 +229,55 @@ function getHtmlBody(firstName, type) {
       mainContent = `<p>Thank you for the opportunity to review your insurance.</p>
       <p>Please complete the form below and return it along with copies of your current Declarations (Dec) pages for your Home.</p>
       
-      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0;">
+      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
         <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">GENERAL CONTACT INFORMATION</h4>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #1</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #2</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Home Address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Mailing Address (if different):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How Long at current address?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>If less than 3 years, please provide previous address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Email Address(es) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Named Insured #1 (First &amp; Last Name - Date of Birth - Occupation):</strong></p>
+        <p style="margin: 10px 0;"><strong>Named Insured #2 (First &amp; Last Name - Date of Birth - Occupation):</strong></p>
+        <p style="margin: 10px 0;"><strong>Home Address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Mailing Address (if different):</strong></p>
+        <p style="margin: 10px 0;"><strong>How Long at current address?</strong></p>
+        <p style="margin: 10px 0;"><strong>If less than 3 years, please provide previous address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
+        <p style="margin: 10px 0;"><strong>Email Address(es) for both Insureds:</strong></p>
 
         <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">HOME INSURANCE INFORMATION</h4>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">* Please attach a copy of your current Homeowners Declarations page.</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Current Home Insurance Company:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
+        <p style="margin: 10px 0;"><strong>Current Home Insurance Company:</strong></p>
+        <p style="margin: 10px 0;"><strong>How long with current carrier?</strong></p>
+        <p style="margin: 10px 0;"><strong>How do you pay?</strong> (Escrow through mortgage / Monthly / Yearly)</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How long with current carrier?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How do you pay?</strong> (mark one):</p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;[ ] Escrow through mortgage<br>
-          &nbsp;&nbsp;[ ] Monthly<br>
-          &nbsp;&nbsp;[ ] Yearly
-        </p>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How many people live in the house?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Adults: [____] &nbsp;&nbsp;&nbsp; Children: [____]
-        </p>
+        <p style="margin: 10px 0;"><strong>How many people live in the house?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Adults:<br>Children:</p>
 
         <h5 style="color: #002868; margin: 20px 0 10px 0; font-size: 13px;">Home Details</h5>
         
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Age of Roof</strong> (year replaced or approximate age):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________]</div>
+        <p style="margin: 10px 0;"><strong>Age of Roof (year replaced or approximate age):</strong></p>
+        <p style="margin: 10px 0;"><strong>Age of Furnace:</strong></p>
         
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Age of Furnace:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________]</div>
-        
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Water Heaters:</strong></p>
-        <p style="margin: 6px 0 6px 20px; font-size: 13px; color: #475569;">
-          How many water heaters? [____] &nbsp;&nbsp;&nbsp; Age of each: [____________]<br>
-          Location(s) in the home (attic, garage, closet, exterior, etc.): [________________________]
+        <p style="margin: 10px 0;"><strong>Water Heaters:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          How many water heaters?<br>
+          Age of each:<br>
+          Location(s) in the home (attic, garage, closet, exterior, etc.):
         </p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Pool on property?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;[ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;If Yes, Fenced? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No
+        <p style="margin: 10px 0;"><strong>Pool on property?</strong> (Yes / No)<br>If Yes, Fenced? (Yes / No)</p>
+        
+        <p style="margin: 10px 0;"><strong>Dogs?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Number of dogs:<br>
+          Breed(s):<br>
+          Any bite incidents or claims? (Yes / No)<br>
+          If Yes, please explain:
         </p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Dogs?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Number of dogs: [____] &nbsp;&nbsp;&nbsp; Breed(s): [________________________]<br>
-          &nbsp;&nbsp;Any bite incidents or claims? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;If Yes, please explain: [____________________________________]
-        </p>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Alarm system?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Alarm installed? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;Professionally monitored? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;Monitoring company: [________________________]
+        <p style="margin: 10px 0;"><strong>Alarm system?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Alarm installed? (Yes / No)<br>
+          Professionally monitored? (Yes / No)<br>
+          Monitoring company:
         </p>
       </div>`;
       break;
@@ -342,146 +286,105 @@ function getHtmlBody(firstName, type) {
       mainContent = `<p>Thank you for the opportunity to review your insurance.</p>
       <p>Please complete the form below and return it along with copies of your current Declarations (Dec) pages for both Auto and Home.</p>
       
-      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0;">
+      <div style="border: 1px dashed #cbd5e1; border-radius: 6px; padding: 20px; background-color: #fafbfd; margin: 25px 0; font-size: 13px; color: #475569; line-height: 1.6;">
         <h4 style="color: #002868; margin-top: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">GENERAL CONTACT INFORMATION</h4>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #1</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Named Insured #2</strong> (First &amp; Last Name):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Home Address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Mailing Address (if different):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How Long at current address?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>If less than 3 years, please provide previous address:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Email Address(es) for both Insureds:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Named Insured #1 (First &amp; Last Name):</strong></p>
+        <p style="margin: 10px 0;"><strong>Named Insured #2 (First &amp; Last Name):</strong></p>
+        <p style="margin: 10px 0;"><strong>Home Address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Mailing Address (if different):</strong></p>
+        <p style="margin: 10px 0;"><strong>How Long at current address?</strong></p>
+        <p style="margin: 10px 0;"><strong>If less than 3 years, please provide previous address:</strong></p>
+        <p style="margin: 10px 0;"><strong>Best Phone Number(s) for both Insureds:</strong></p>
+        <p style="margin: 10px 0;"><strong>Email Address(es) for both Insureds:</strong></p>
 
         <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">AUTO INSURANCE INFORMATION</h4>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">* Please attach a copy of your current Auto Declarations page from your current carrier (shows coverages/limits for "apples-to-apples" comparison).</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Current Auto Insurance Company:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How long with current carrier?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Policy Renewal Date (if known):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
+        <p style="margin: 10px 0;"><strong>Current Auto Insurance Company:</strong></p>
+        <p style="margin: 10px 0;"><strong>How long with current carrier?</strong></p>
+        <p style="margin: 10px 0;"><strong>Policy Renewal Date (if known):</strong></p>
 
         <h5 style="color: #002868; margin: 15px 0 10px 0; font-size: 13px;">Drivers</h5>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">List all drivers in the household:</p>
         
-        <div style="border-left: 3px solid #cbd5e1; padding-left: 10px; margin-bottom: 15px;">
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 1:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-          
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 2:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-          
-          <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Driver 3:</strong> Full Name | DOB | License # &amp; State | Occupation</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[____________________________________________________]</div>
-        </div>
+        <p style="margin: 10px 0;"><strong>Driver 1 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Additional drivers (if any):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Driver 2 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>How many household drivers &amp; non-drivers total?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Drivers: [____] &nbsp;&nbsp;&nbsp; Non-drivers: [____]
-        </p>
+        <p style="margin: 10px 0;"><strong>Driver 3 – Full Name:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Date of Birth:<br>Driver’s License Number &amp; State:<br>Occupation:</p>
+        
+        <p style="margin: 10px 0;"><strong>Additional drivers (if any):</strong></p>
+        <p style="margin: 10px 0;"><strong>How many household drivers &amp; non-drivers total?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Drivers:<br>Non-drivers:</p>
 
         <h5 style="color: #002868; margin: 20px 0 10px 0; font-size: 13px;">Vehicles &amp; Usage</h5>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">List each vehicle and how it is used:</p>
         
-        <div style="border-left: 3px solid #cbd5e1; padding-left: 10px; margin-bottom: 15px;">
-          <p style="margin: 8px 0; font-size: 13px;"><strong>Vehicle 1</strong> – Year/Make/Model:</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[________________________]</div>
-          <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-            &nbsp;&nbsp;Primary Driver: [________________] &nbsp;&nbsp;&nbsp; One-way miles to work/school: [____]<br>
-            &nbsp;&nbsp;Days per week for work/school: [____] &nbsp;&nbsp;&nbsp; Date Purchased: [________]<br>
-            &nbsp;&nbsp;Pleasure / Business use (describe): [________________________]<br>
-            &nbsp;&nbsp;Is there a lien or lease? (Yes/No): [____] &nbsp;&nbsp;&nbsp; Lender/Lease Co Name &amp; Address: [________________________]
-          </p>
+        <p style="margin: 10px 0;"><strong>Vehicle 1 – Year/Make/Model:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Who primarily drives this vehicle?<br>
+          One-way miles to work or school:<br>
+          How many days per week for work/school use?<br>
+          Pleasure / Business use (describe):<br>
+          Date purchased:<br>
+          Is there a lien or lease? (Yes/No)<br>
+          If Yes, Lender/Lease Company Name &amp; Address:
+        </p>
 
-          <p style="margin: 15px 0 8px 0; font-size: 13px;"><strong>Vehicle 2</strong> – Year/Make/Model:</p>
-          <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 8px;">[________________________]</div>
-          <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-            &nbsp;&nbsp;Primary Driver: [________________] &nbsp;&nbsp;&nbsp; One-way miles to work/school: [____]<br>
-            &nbsp;&nbsp;Days per week for work/school: [____] &nbsp;&nbsp;&nbsp; Date Purchased: [________]<br>
-            &nbsp;&nbsp;Pleasure / Business use (describe): [________________________]<br>
-            &nbsp;&nbsp;Is there a lien or lease? (Yes/No): [____] &nbsp;&nbsp;&nbsp; Lender/Lease Co Name &amp; Address: [________________________]
-          </p>
-        </div>
+        <p style="margin: 15px 0 10px 0;"><strong>Vehicle 2 – Year/Make/Model:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Who primarily drives this vehicle?<br>
+          One-way miles to work or school:<br>
+          How many days per week for work/school use?<br>
+          Pleasure / Business use (describe):<br>
+          Date purchased:<br>
+          Is there a lien or lease? (Yes/No)<br>
+          If Yes, Lender/Lease Company Name &amp; Address:
+        </p>
         
-        <p style="margin: 8px 0 4px 0; font-size: 13px;"><strong>Additional vehicles (if any):</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________________________________________________]</div>
+        <p style="margin: 10px 0;"><strong>Additional vehicles (if any):</strong></p>
 
         <h4 style="color: #002868; margin-top: 25px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; font-size: 14px; letter-spacing: 0.5px;">HOME INSURANCE INFORMATION</h4>
         <p style="margin: 6px 0; font-size: 12px; color: #64748b; font-style: italic;">* Please attach a copy of your current Homeowners Declarations page.</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Current Home Insurance Company:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
+        <p style="margin: 10px 0;"><strong>Current Home Insurance Company:</strong></p>
+        <p style="margin: 10px 0;"><strong>How long with current carrier?</strong></p>
+        <p style="margin: 10px 0;"><strong>How do you pay?</strong> (Escrow through mortgage / Monthly / Yearly)</p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How long with current carrier?</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[________________________]</div>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How do you pay?</strong> (mark one):</p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;[ ] Escrow through mortgage<br>
-          &nbsp;&nbsp;[ ] Monthly<br>
-          &nbsp;&nbsp;[ ] Yearly
-        </p>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>How many people live in the house?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Adults: [____] &nbsp;&nbsp;&nbsp; Children: [____]
-        </p>
+        <p style="margin: 10px 0;"><strong>How many people live in the house?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">Adults:<br>Children:</p>
 
         <h5 style="color: #002868; margin: 20px 0 10px 0; font-size: 13px;">Home Details</h5>
         
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Age of Roof</strong> (year replaced or approximate age):</p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________]</div>
+        <p style="margin: 10px 0;"><strong>Age of Roof (year replaced or approximate age):</strong></p>
+        <p style="margin: 10px 0;"><strong>Age of Furnace:</strong></p>
         
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Age of Furnace:</strong></p>
-        <div style="color: #94a3b8; font-size: 13px; border-bottom: 1px dotted #cbd5e1; padding-bottom: 4px; margin-bottom: 12px;">[____________]</div>
-        
-        <p style="margin: 10px 0 6px 0; font-size: 13px;"><strong>Water Heaters:</strong></p>
-        <p style="margin: 6px 0 6px 20px; font-size: 13px; color: #475569;">
-          How many water heaters? [____] &nbsp;&nbsp;&nbsp; Age of each: [____________]<br>
-          Location(s) in the home (attic, garage, closet, exterior, etc.): [________________________]
+        <p style="margin: 10px 0;"><strong>Water Heaters:</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          How many water heaters?<br>
+          Age of each:<br>
+          Location(s) in the home (attic, garage, closet, exterior, etc.):
         </p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Pool on property?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;[ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;If Yes, Fenced? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No
+        <p style="margin: 10px 0;"><strong>Pool on property?</strong> (Yes / No)<br>If Yes, Fenced? (Yes / No)</p>
+        
+        <p style="margin: 10px 0;"><strong>Dogs?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Number of dogs:<br>
+          Breed(s):<br>
+          Any bite incidents or claims? (Yes / No)<br>
+          If Yes, please explain:
         </p>
         
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Dogs?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Number of dogs: [____] &nbsp;&nbsp;&nbsp; Breed(s): [________________________]<br>
-          &nbsp;&nbsp;Any bite incidents or claims? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;If Yes, please explain: [____________________________________]
-        </p>
-        
-        <p style="margin: 12px 0 6px 0; font-size: 13px;"><strong>Alarm system?</strong></p>
-        <p style="margin: 6px 0; font-size: 13px; color: #475569;">
-          &nbsp;&nbsp;Alarm installed? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;Professionally monitored? [ ] Yes &nbsp;&nbsp;&nbsp; [ ] No<br>
-          &nbsp;&nbsp;Monitoring company: [________________________]
+        <p style="margin: 10px 0;"><strong>Alarm system?</strong></p>
+        <p style="margin: 6px 0 12px 20px;">
+          Alarm installed? (Yes / No)<br>
+          Professionally monitored? (Yes / No)<br>
+          Monitoring company:
         </p>
       </div>`;
       break;
