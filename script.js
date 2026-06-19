@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.style.color = '#FFFFFF';
 
                     // Alert the user of receipt
-                    alert(`Thank you, ${name}! We have received your detailed Texas quote request and Greg will contact you shortly.`);
+                    alert(`Thank you, ${name}! We have received your detailed Texas quote request and we will contact you shortly.`);
 
                     // Reset form fields
                     quoteForm.reset();
