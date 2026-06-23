@@ -389,4 +389,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // Pause Google Reviews marquee scrolling when touched on mobile
+    const reviewsTrack = document.querySelector('.reviews-track');
+    if (reviewsTrack) {
+        reviewsTrack.addEventListener('touchstart', () => {
+            reviewsTrack.style.animationPlayState = 'paused';
+        }, { passive: true });
+
+        reviewsTrack.addEventListener('touchend', () => {
+            reviewsTrack.style.animationPlayState = 'running';
+        }, { passive: true });
+
+        reviewsTrack.addEventListener('touchcancel', () => {
+            reviewsTrack.style.animationPlayState = 'running';
+        }, { passive: true });
+    }
 });
