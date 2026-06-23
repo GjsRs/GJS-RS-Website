@@ -1456,6 +1456,15 @@ ul {
     transition: opacity var(--transition-base), transform var(--transition-base);
 }
 
+.carrier-item.large-logo {
+    width: 200px;
+}
+
+.carrier-item.large-logo svg,
+.carrier-item.large-logo img {
+    max-height: 58px;
+}
+
 .carrier-item:hover {
     transform: translateY(-4px) scale(1.05);
 }
