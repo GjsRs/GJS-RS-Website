@@ -1783,7 +1783,21 @@ ul {
         max-width: 280px;
         margin: 0 auto;
     }
+    .reviews-scroller {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .reviews-scroller::-webkit-scrollbar {
+        display: none;
+    }
+    .reviews-scroller::before,
+    .reviews-scroller::after {
+        width: 40px;
+    }
     .reviews-track {
-        animation-duration: 90s;
+        animation: none;
     }
 }
