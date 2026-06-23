@@ -1457,12 +1457,12 @@ ul {
 }
 
 .carrier-item.large-logo {
-    width: 200px;
+    width: 230px;
 }
 
 .carrier-item.large-logo svg,
 .carrier-item.large-logo img {
-    max-height: 58px;
+    max-height: 68px;
 }
 
 .carrier-item:hover {
