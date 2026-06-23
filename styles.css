@@ -1783,4 +1783,7 @@ ul {
         max-width: 280px;
         margin: 0 auto;
     }
+    .reviews-track {
+        animation-duration: 90s;
+    }
 }
