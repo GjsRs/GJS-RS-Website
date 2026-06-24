@@ -595,6 +595,9 @@ function getHtmlBody(firstName, type) {
     </div>
     <div class="email-body">
       <h2>Hi ${firstName},</h2>
+      <div style="background-color: #f8fafc; border-left: 3px solid #002868; padding: 12px 15px; margin-bottom: 20px; font-size: 11px; color: #64748b; border-radius: 0 4px 4px 0; line-height: 1.5;">
+        <strong>Privacy &amp; Security Policy:</strong> GJS Risk Solutions is committed to protecting your personal data. Any information submitted will not be sold, leased, or distributed to third parties. Access is strictly restricted to GJS Risk Solutions staff for the sole purpose of quoting and analyzing your insurance needs.
+      </div>
       ${mainContent}
       
       <div class="btn-container">
